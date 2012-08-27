@@ -1,0 +1,30 @@
+name: InvisibleWalls
+main: me.johni0702.invisiblewalls.InvisibleWallsPlugin
+version: 0.0.1
+author: Johni0702
+depend: [WorldEdit]
+soft-depend: [Vault]
+commands:
+    iw:
+      description: Create/Manage invisible walls/zones
+      usage: /<command> <create/delete/+/-/info/kill> [args...]
+      permission-message: You don't have permission to do that!
+permissions:
+    InvisibleWalls.create:
+        description: Allows you to create a new zone
+        default: op
+    InvisibleWalls.delete:
+        description: Allows you to delete a zone
+        default: op
+    InvisibleWalls.info:
+        description: Allows you to see information about the zone you are currently in
+        default: op
+    InvisibleWalls.add:
+        description: Allows you to block players/groups from zones
+        default: op
+    InvisibleWalls.rem:
+        description: Allows you to unblock players/groups from zones
+        default: op
+    InvisibleWalls.kill:
+        description: Allows you to change a normal zone to a killzone and back
+        default: op
